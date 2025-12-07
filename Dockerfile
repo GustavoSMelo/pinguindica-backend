@@ -19,7 +19,7 @@ WORKDIR /var/www/html
 COPY . .
 
 # Install PHP dependencies
-RUN composer install --no-interaction --prefer-dist --optimize-autoloader
+RUN composer install
 
 # Ensure SQLite directory exists
 RUN mkdir -p database && touch database/database.sqlite
