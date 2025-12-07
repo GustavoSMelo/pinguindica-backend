@@ -17,7 +17,7 @@ class DistroSeeder extends Seeder
             'difficulty' => 'medium',
             'old_hardware' => true,
             'appearance' => json_encode(['beginner friendly', 'difference']),
-            'focus' => json_encode(['general use', 'server']),
+            'focus' => json_encode(['general use', 'server', 'gaming', 'security']),
             'description' => 'Ubuntu é uma das distribuições Linux mais conhecidas e usadas no mundo. Uma das suas maiores forças é a popularidade. Por ser a distro mais usada, ela acaba sendo também a mais bem servida em termos de ajuda: existem milhares de tutoriais, vídeos, guias e fóruns onde você pode encontrar respostas para praticamente qualquer dúvida. Se você procurar algo sobre Linux na internet, é muito provável que encontre instruções específicas para Ubuntu. Outra vantagem importante é que ele é a distribuição com maior suporte de aplicativos e programas no mundo Linux. Muitos softwares são criados ou testados primeiro para Ubuntu, o que deixa tudo mais simples para o usuário comum. Impressoras, placas de vídeo, ferramentas de trabalho e aplicativos do dia a dia geralmente funcionam sem dor de cabeça.',
             'logo_url' => 'https://distrowatch.com/images/yvzhuwbpy/ubuntu.png',
             'download_page' => 'https://ubuntu.com/download/desktop'
@@ -28,7 +28,7 @@ class DistroSeeder extends Seeder
             'difficulty' => 'easy',
             'old_hardware' => true,
             'appearance' => json_encode(['beginner friendly', 'windows-like']),
-            'focus' => json_encode(['general use', 'entry point']),
+            'focus' => json_encode(['general use', 'entry point', 'gaming', 'security']),
             'description' => 'Zorin OS é uma distribuição Linux feita especialmente para quem está saindo do Windows e quer algo familiar. Ele se destaca por ter uma interface muito parecida com o Windows 10 e 11, com um menu iniciar, barra de tarefas e organização visual que deixam qualquer usuário de Windows confortável desde o primeiro minuto. Esse visual amigável ajuda bastante quem não quer passar por uma mudança brusca ao migrar para o Linux. Além disso, o Zorin OS é rápido, bonito e pensado para ser fácil de usar, mesmo para quem nunca mexeu com Linux antes. Outra vantagem é que ele já vem com vários programas úteis instalados e possui uma loja de aplicativos simples e bem organizada, que lembra bastante a experiência das lojas de apps modernas. Para muitos usuários, o Zorin acaba sendo a “transição perfeita”: mantém a sensação do Windows, mas com a estabilidade e segurança do Linux.',
             'logo_url' => 'https://distrowatch.com/images/yvzhuwbpy/zorin.png',
             'download_page' => 'https://zorin.com/os/download/',
@@ -40,7 +40,7 @@ class DistroSeeder extends Seeder
             'difficulty' => 'easy',
             'old_hardware' => true,
             'appearance' => json_encode(['beginner friendly', 'windows-like']),
-            'focus' => json_encode(['general use', 'entry point']),
+            'focus' => json_encode(['general use', 'entry point', 'gaming', 'security', 'stability']),
             'description' => 'Linux Mint é uma das distribuições Linux mais populares e queridas, principalmente entre iniciantes. Ele é conhecido por ser simples, leve e muito fácil de usar, oferecendo uma experiência que lembra bastante o visual clássico do Windows, o que ajuda muito quem está migrando e quer algo familiar. O sistema funciona bem mesmo em computadores mais fracos e já vem com vários programas úteis instalados, permitindo que você comece a usar tudo sem complicação. Além disso, o Mint conta com uma comunidade grande e ativa, cheia de tutoriais e suporte, tornando a transição para o Linux ainda mais tranquila. No geral, é uma escolha excelente para quem busca um sistema estável, rápido e pronto para o dia a dia.',
             'logo_url' => 'https://distrowatch.com/images/yvzhuwbpy/mint.png',
             'download_page' => 'https://linuxmint.com/download.php',
@@ -52,7 +52,7 @@ class DistroSeeder extends Seeder
             'difficulty' => 'easy',
             'old_hardware' => false,
             'appearance' => json_encode(['beginner friendly', 'macos-like']),
-            'focus' => json_encode(['general use', 'entry point']),
+            'focus' => json_encode(['general use', 'entry point', 'gaming', 'security', 'enthusiast']),
             'description' => 'Pop!_OS é uma distribuição Linux moderna e voltada para quem gosta de desempenho e praticidade. Criado pela System76, ele é pensado para ser rápido, bonito e muito fácil de usar, com uma interface elegante que ajuda a organizar as janelas e deixar tudo mais produtivo. Uma das suas maiores vantagens é que ele funciona muito bem para quem usa o computador para estudar, trabalhar ou programar, além de ter um ótimo suporte para placas de vídeo, o que o torna uma ótima opção para jogos e tarefas pesadas. O Pop!_OS também traz ferramentas próprias que facilitam o dia a dia, como o modo de tiling automático, que organiza as janelas na tela de forma inteligente. No geral, é uma escolha excelente para quem quer um Linux moderno, ágil e pronto para oferecer uma experiência fluida tanto para usuários iniciantes quanto mais avançados.',
             'logo_url' => 'https://distrowatch.com/images/yvzhuwbpy/popos.png',
             'download_page' => 'https://system76.com/pop/download/?srsltid=AfmBOopI7bxL6A7PjTPDYDNZVJRCnBGp23D7l6t-QyoViV9X4OixfFsd',
@@ -155,7 +155,7 @@ class DistroSeeder extends Seeder
             'old_hardware' => true,
             'appearance' => json_encode(['various']),
             'focus' => json_encode(['gaming', 'general use']),
-            'description' => 'O BigLinux é uma distribuição Linux brasileira que se destaca por oferecer uma experiência prática, rápida e amigável para usuários de todos os níveis, especialmente aqueles que estão migrando do Windows e buscam um sistema pronto para uso. Baseado no Debian e no KDE Neon, o BigLinux combina estabilidade com um ambiente gráfico moderno, utilizando o KDE Plasma altamente personalizado para proporcionar uma interface elegante e intuitiva. A distribuição se diferencia por trazer uma grande variedade de ferramentas próprias, como o Big Store — uma loja de aplicativos unificada que facilita a instalação de programas em formatos como DEB, Snap, Flatpak e AppImage — e o Big Drivers, que simplifica a configuração de componentes de hardware, incluindo placas de vídeo. Além disso, o sistema oferece otimizações automáticas, temas visuais variados e recursos que melhoram o desempenho, tornando a experiência fluida mesmo em computadores mais simples. O BigLinux também inclui codecs, aplicativos essenciais e diversas opções de personalização, permitindo que o usuário molde o sistema de acordo com suas preferências sem complicações. Com sua combinação de facilidade, beleza e eficiência, ele se tornou uma das principais opções nacionais para quem busca um Linux amigável, completo e pronto para tarefas cotidianas, produtividade e até mesmo jogos.',
+            'description' => 'EndeavourOS é uma distribuição Linux baseada no Arch Linux que tem como foco oferecer uma experiência simples, acessível e ao mesmo tempo profundamente personalizável. Surgida como sucessora espiritual do projeto Antergos, ela mantém a filosofia de facilitar a instalação e o primeiro contato do usuário com o universo Arch, sem abrir mão da leveza e da flexibilidade características desse ecossistema. Com um instalador amigável e opções para escolher entre diversos ambientes gráficos, o EndeavourOS permite que o usuário construa um sistema enxuto e sob medida, instalando apenas o que deseja. Após a instalação, o sistema permanece muito próximo do Arch puro, recebendo atualizações contínuas (rolling release) e trazendo a força do Arch User Repository (AUR), o que garante acesso a uma enorme variedade de softwares. A comunidade do EndeavourOS, bastante ativa e acolhedora, valoriza a autonomia do usuário, incentivando o aprendizado e a exploração de novas possibilidades dentro do Linux, sempre com foco em estabilidade, simplicidade e transparência.',
             'logo_url' => 'https://distrowatch.com/images/yvzhuwbpy/endeavour.png',
             'download_page' => 'https://endeavouros.com/'
         ]);
@@ -247,6 +247,17 @@ class DistroSeeder extends Seeder
             'description' => 'O Bazzite Linux é uma distribuição baseada no Fedora, voltada principalmente para jogos e multimídia, oferecendo drivers de vídeo, bibliotecas e compatibilidade com plataformas como Steam e Lutris desde a instalação. Ele utiliza um sistema imutável com rpm-ostree, permitindo atualizações seguras e rollback em caso de problemas. Embora seja focado em performance e jogos, também pode ser usado como sistema diário, oferecendo suporte a aplicativos, codecs e ambientes de desktop prontos para uso. Seu objetivo é combinar facilidade, estabilidade e desempenho, tornando a experiência Linux acessível para gamers e usuários que querem um sistema pronto para uso.',
             'logo_url' => 'https://distrowatch.com/images/yvzhuwbpy/bazzite.png',
             'download_page' => 'https://bazzite.gg/'
+        ]);
+
+        DB::table('distro')->insert([
+            'name' => 'Regata OS',
+            'difficulty' => 'easy',
+            'old_hardware' => true,
+            'appearance' => json_encode(['windows-like', 'various', 'difference']),
+            'focus' => json_encode(['gaming', 'stability', 'general use', 'enthusiast', 'entry point']),
+            'description' => '',
+            'logo_url' => 'https://distrowatch.com/images/yvzhuwbpy/regata.png',
+            'download_page' => 'https://get.regataos.com.br/p/download.html'
         ]);
 
         DB::table('distro')->insert([
