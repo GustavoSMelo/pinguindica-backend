@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('focus');
             $table->text('description');
             $table->string('download_page');
-            $table->string('logo');
+            $table->text('logo');
             $table->timestamps();
         });
     }
