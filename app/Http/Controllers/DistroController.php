@@ -52,7 +52,7 @@ class DistroController extends Controller
                 return response()->json(['message' => 'security password is invalid'], 400);
             }
 
-            $difficult = $request->input('difficult');
+            $difficulty = $request->input('difficulty');
             $old_hardware = $request->input('old_hardware');
             $appearance = $request->input('appearance');
             $focus = $request->input('focus');
@@ -63,7 +63,7 @@ class DistroController extends Controller
             $description = $request->input('description');
 
             $distro = Distro::create([
-                'difficulty' => $difficult,
+                'difficulty' => $difficulty,
                 'old_hardware' => $old_hardware,
                 'appearance' => json_encode($appearance),
                 'focus' => json_encode($focus),
@@ -92,7 +92,7 @@ class DistroController extends Controller
     {
         try {
             $request->validate([
-                'difficult' => ['required', 'string', 'in:easy,medium,hard,extreme'],
+                'difficulty' => ['required', 'string', 'in:easy,medium,hard,extreme'],
                 'old_hardware' => ['required', 'boolean'],
                 'appearance' => ['required', 'array'],
                 'appearance.*' => ['required', 'string', 'in:windows-like,macos-like,terminal,difference,various'],
@@ -102,7 +102,7 @@ class DistroController extends Controller
 
             $query = Distro::query()
                 ->where('old_hardware', '=',$request->old_hardware)
-                ->where('difficulty','=', $request->difficult);
+                ->where('difficulty','=', $request->difficulty);
 
             foreach ($request->appearance as $item) {
                 $query->whereJsonContains('appearance', $item);
@@ -125,7 +125,7 @@ class DistroController extends Controller
     {
         try {
             $request->validate([
-                'difficult' => ['required', 'string', 'in:easy,medium,hard,extreme'],
+                'difficulty' => ['required', 'string', 'in:easy,medium,hard,extreme'],
                 'old_hardware' => ['required', 'boolean'],
                 'appearance' => ['required', 'array'],
                 'appearance.*' => ['required', 'string', 'in:windows-like,macos-like,terminal,difference,various,terminal'],
@@ -147,7 +147,7 @@ class DistroController extends Controller
                 return response()->json(['message' => 'security password is invalid'], 400);
             }
 
-            $difficult = $request->input('difficult');
+            $difficulty = $request->input('difficulty');
             $old_hardware = $request->input('old_hardware');
             $appearance = $request->input('appearance');
             $focus = $request->input('focus');
@@ -160,7 +160,7 @@ class DistroController extends Controller
             $distro = Distro::query()->where('id', '=', $id)->first();
 
             $distro->update([
-                'difficulty' => $difficult,
+                'difficulty' => $difficulty,
                 'old_hardware' => $old_hardware,
                 'appearance' => json_encode($appearance),
                 'focus' => json_encode($focus),
